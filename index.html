@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create Binary to Decimal Converter Using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="binary_to_decimal">
+        <div class="container">
+            <h2>Binary Harshal</h2>
+            <div class="form-row">
+                <form>
+                    <div class="field">
+                        <label>
+                            <input type="text" name="bin" id="input" autocomplete="off" placeholder="Enter binary number!">
+                            <!-- <p>Binary</p> -->
+                        </label>
+                    </div>
+                    <div class="field">
+                        <label>
+                            <input type="text" name="dec" id="output" readonly="true"
+                                placeholder="Result will appear here!">
+                            <!-- <p>Decimal</p> -->
+                        </label>
+                    </div>
+                    <div class="field btn-field">
+                        <button type="button" id="btn">Convert</button>
+                    </div>
+                </form>
+                <div id="error-msg">
+                    <p>Binary number should have 0 and 1 only!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

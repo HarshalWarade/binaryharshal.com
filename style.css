@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+html,body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+}
+.binary_to_decimal h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: orange;
+}
+.binary_to_decimal {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 0.2rem;
+}
+.field {
+  margin-bottom: 15px;
+}
+.field label {
+  position: relative;
+}
+.field label input {
+  font-size: 1rem;
+  color: #565656;
+  background: transparent;
+  padding: 1rem 1.2rem;
+  min-width: 100%;
+  border: 2px solid #565656;
+  border-radius: 0.2rem;
+}
+.field label input:focus {
+  border-color: orange;
+}
+.field label input:focus + p, .field label input:not(:placeholder-shown) + p {
+  top: -20px;
+  font-size: 0.9rem;
+  color: orange;
+}
+.field label input:not(:focus) + p {
+  color: #565656;
+}
+button#btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  background: orange;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+div#error-msg {
+  color: red;
+  display: none;
+}
+
+@media(max-width: 900px){
+
+    .binary_to_decimal{
+        width: 90%;
+        /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.2); */
+    }
+}
